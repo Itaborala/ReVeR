@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 84.0, 1213.0, 610.0 ],
+		"rect" : [ 34.0, 100.0, 1370.0, 796.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,50 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-78",
-					"linecount" : 5,
-					"maxclass" : "comment",
+					"id" : "obj-77",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1085.0, 69.0, 131.0, 22.0 ],
+					"text" : "port \"Lightpad BLOCK\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1088.0, 19.5, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1177.0, 147.5, 65.0, 49.0 ],
+					"presentation_linecount" : 3,
+					"text" : "port \"Elektron TM-1\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
 					"numoutlets" : 0,
-					"patching_rect" : [ 328.0, 128.0, 183.0, 75.0 ],
-					"text" : "ReVeR\nby Paulo Itaborai and Dino Vicente \n2023-24\nPlymouth++São Paulo++Berlin"
+					"patching_rect" : [ 1088.0, 174.5, 59.0, 22.0 ],
+					"text" : "noteout 2"
 				}
 
 			}
@@ -55,22 +92,10 @@
 					"id" : "obj-76",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 514.0, 113.365853309631348, 29.5, 22.0 ],
-					"text" : "t b l"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-44",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 437.060974955558777, 210.0, 104.878050088882446, 22.0 ],
-					"text" : "208 -1."
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "int" ],
+					"patching_rect" : [ 1088.0, 109.5, 143.0, 22.0 ],
+					"text" : "notein \"Lightpad BLOCK\""
 				}
 
 			}
@@ -284,7 +309,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 492.0, 84.0, 640.0, 480.0 ],
+						"rect" : [ 492.0, 100.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -382,7 +407,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 384.0, 338.0, 65.0, 50.0 ],
+									"patching_rect" : [ 384.0, 338.0, 65.0, 49.0 ],
 									"text" : "port \"Elektron TM-1\""
 								}
 
@@ -651,7 +676,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 248.43902325630188, 172.0, 56.0, 22.0 ],
+					"patching_rect" : [ 296.0, 172.0, 56.0, 22.0 ],
 					"sig" : 0.0
 				}
 
@@ -1120,7 +1145,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 364.0, 583.0, 65.0, 50.0 ],
+					"patching_rect" : [ 364.0, 583.0, 65.0, 49.0 ],
 					"text" : "port \"Elektron TM-1\""
 				}
 
@@ -1133,7 +1158,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 447.0, 583.0, 65.0, 50.0 ],
+					"patching_rect" : [ 447.0, 583.0, 65.0, 49.0 ],
 					"text" : "port \"Elektron TM-1\""
 				}
 
@@ -1244,13 +1269,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 662.5, 506.797027500000013, 135.0, 36.0 ],
-					"text" : "/dinotable 511 -0.083763"
+					"patching_rect" : [ 662.5, 506.797027500000013, 135.0, 22.0 ],
+					"text" : "/bang bang"
 				}
 
 			}
@@ -1327,13 +1351,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 759.0, 403.0, 50.0, 49.0 ],
-									"text" : "440. 200"
+									"text" : "228.661417 200"
 								}
 
 							}
@@ -1346,7 +1370,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 656.0, 495.0, 28.0, 35.0 ],
-									"text" : "440"
+									"text" : "228"
 								}
 
 							}
@@ -2355,7 +2379,7 @@
 					"patching_rect" : [ 599.5, 257.0, 139.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 0.0, 0.0, 100.0, 50.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 100.0, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2384,7 +2408,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -184.0, 415.0, 1358.0, 997.0 ],
+						"rect" : [ 138.0, -990.0, 1683.0, 997.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2455,7 +2479,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 514.0, 145.170732259750366, 68.0, 22.0 ],
+					"patching_rect" : [ 514.0, 122.0, 68.0, 22.0 ],
 					"text" : "peek~ dino"
 				}
 
@@ -2757,6 +2781,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"midpoints" : [ 587.5, 201.0, 600.0, 201.0, 600.0, 252.0, 609.0, 252.0 ],
 					"source" : [ "obj-2", 1 ]
@@ -2767,13 +2798,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-50", 0 ],
 					"source" : [ "obj-2", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-76", 0 ],
-					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -2844,13 +2868,6 @@
 					"destination" : [ "obj-31", 0 ],
 					"midpoints" : [ 305.5, 114.0, 199.5, 114.0 ],
 					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 1 ],
-					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -3033,9 +3050,35 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"midpoints" : [ 1097.5, 44.5, 1075.0, 44.5, 1075.0, 101.5, 1186.5, 101.5 ],
+					"order" : 0,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"midpoints" : [ 1097.5, 44.5, 1094.5, 44.5 ],
+					"order" : 1,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"midpoints" : [ 546.0, 459.0, 546.0, 459.0 ],
 					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"midpoints" : [ 1186.5, 167.5, 1097.5, 167.5 ],
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
@@ -3277,16 +3320,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"midpoints" : [ 523.5, 138.0, 555.0, 138.0, 555.0, 132.0, 594.0, 132.0, 594.0, 243.0, 378.0, 243.0, 378.0, 204.0, 315.0, 204.0, 315.0, 159.0, 231.0, 159.0, 231.0, 165.0, 112.5, 165.0 ],
+					"destination" : [ "obj-63", 1 ],
+					"source" : [ "obj-76", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"midpoints" : [ 1097.5, 134.5, 1097.5, 134.5 ],
 					"source" : [ "obj-76", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-76", 1 ]
+					"destination" : [ "obj-76", 0 ],
+					"midpoints" : [ 1094.5, 89.5, 1097.5, 89.5 ],
+					"source" : [ "obj-77", 0 ]
 				}
 
 			}
@@ -3339,12 +3390,12 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "och.microqiskit.mxe64",
-				"type" : "mx64"
+				"name" : "och.microqiskit.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "osc_qasm.maxpat",
-				"bootpath" : "~/Documents/ReVeR",
+				"bootpath" : "~/Documents/GitHub/ReVeR",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3352,10 +3403,8 @@
  ],
 		"autosave" : 0,
 		"default_bgcolor" : [ 0.341176470588235, 0.862745098039216, 0.686274509803922, 1.0 ],
-		"color" : [ 0.2, 0.380392156862745, 0.403921568627451, 1.0 ],
-		"elementcolor" : [ 0.286274509803922, 0.180392156862745, 0.815686274509804, 0.46 ],
+		"color" : [ 0.368627450980392, 0.698039215686274, 0.741176470588235, 1.0 ],
 		"accentcolor" : [ 0.309803921568627, 0.596078431372549, 0.796078431372549, 1.0 ],
-		"textcolor" : [ 0.701960784313725, 0.701960784313725, 0.701960784313725, 1.0 ],
 		"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 		"bgcolor" : [ 0.223529411764706, 0.223529411764706, 0.223529411764706, 1.0 ],
 		"bgfillcolor_type" : "gradient",
