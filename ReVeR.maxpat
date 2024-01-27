@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1370.0, 796.0 ],
+		"rect" : [ -248.0, 119.0, 1014.0, 796.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-79",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 412.0, 184.0, 100.0, 34.0 ],
+					"text" : "ReVeR (2023-24)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 503.5, 122.0, 29.5, 22.0 ],
+					"text" : "t b l"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-77",
 					"maxclass" : "message",
@@ -70,8 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1177.0, 147.5, 65.0, 49.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 1177.0, 147.5, 65.0, 50.0 ],
 					"text" : "port \"Elektron TM-1\""
 				}
 
@@ -407,7 +430,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 384.0, 338.0, 65.0, 49.0 ],
+									"patching_rect" : [ 384.0, 338.0, 65.0, 50.0 ],
 									"text" : "port \"Elektron TM-1\""
 								}
 
@@ -1145,7 +1168,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 364.0, 583.0, 65.0, 49.0 ],
+					"patching_rect" : [ 364.0, 583.0, 65.0, 50.0 ],
 					"text" : "port \"Elektron TM-1\""
 				}
 
@@ -1158,7 +1181,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 447.0, 583.0, 65.0, 49.0 ],
+					"patching_rect" : [ 447.0, 583.0, 65.0, 50.0 ],
 					"text" : "port \"Elektron TM-1\""
 				}
 
@@ -1269,12 +1292,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-14",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 662.5, 506.797027500000013, 135.0, 22.0 ],
-					"text" : "/bang bang"
+					"patching_rect" : [ 662.5, 506.797027500000013, 135.0, 36.0 ],
+					"text" : "/dinotable 133 0.558113"
 				}
 
 			}
@@ -1351,13 +1375,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 759.0, 403.0, 50.0, 49.0 ],
-									"text" : "228.661417 200"
+									"text" : "440. 200"
 								}
 
 							}
@@ -1370,7 +1394,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 656.0, 495.0, 28.0, 35.0 ],
-									"text" : "228"
+									"text" : "440"
 								}
 
 							}
@@ -2379,7 +2403,7 @@
 					"patching_rect" : [ 599.5, 257.0, 139.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 0.0, 0.0, 100.0, 49.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 100.0, 50.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2408,7 +2432,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 138.0, -990.0, 1683.0, 997.0 ],
+						"rect" : [ 41.0, 84.0, 1683.0, 997.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2479,7 +2503,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 514.0, 122.0, 68.0, 22.0 ],
+					"patching_rect" : [ 514.0, 153.0, 68.0, 22.0 ],
 					"text" : "peek~ dino"
 				}
 
@@ -2781,16 +2805,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-2", 0 ]
+					"destination" : [ "obj-4", 0 ],
+					"midpoints" : [ 587.5, 201.0, 600.0, 201.0, 600.0, 252.0, 609.0, 252.0 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"midpoints" : [ 587.5, 201.0, 600.0, 201.0, 600.0, 252.0, 609.0, 252.0 ],
-					"source" : [ "obj-2", 1 ]
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -3045,6 +3069,21 @@
 					"destination" : [ "obj-45", 0 ],
 					"midpoints" : [ 517.5, 426.0, 546.0, 426.0 ],
 					"source" : [ "obj-42", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"midpoints" : [ 513.0, 147.0, 231.0, 147.0, 231.0, 165.0, 112.5, 165.0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-43", 1 ]
 				}
 
 			}
@@ -3390,12 +3429,12 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "och.microqiskit.mxo",
-				"type" : "iLaX"
+				"name" : "och.microqiskit.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "osc_qasm.maxpat",
-				"bootpath" : "~/Documents/GitHub/ReVeR",
+				"bootpath" : "~/Documents/ReVeR",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3404,7 +3443,9 @@
 		"autosave" : 0,
 		"default_bgcolor" : [ 0.341176470588235, 0.862745098039216, 0.686274509803922, 1.0 ],
 		"color" : [ 0.368627450980392, 0.698039215686274, 0.741176470588235, 1.0 ],
+		"elementcolor" : [ 0.0, 0.458823529411765, 0.611764705882353, 1.0 ],
 		"accentcolor" : [ 0.309803921568627, 0.596078431372549, 0.796078431372549, 1.0 ],
+		"textcolor" : [ 0.796078431372549, 0.796078431372549, 0.796078431372549, 1.0 ],
 		"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 		"bgcolor" : [ 0.223529411764706, 0.223529411764706, 0.223529411764706, 1.0 ],
 		"bgfillcolor_type" : "gradient",
