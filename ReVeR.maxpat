@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 48.0, 107.0, 1370.0, 796.0 ],
+		"rect" : [ 34.0, 100.0, 1370.0, 796.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,67 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-77",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1085.0, 69.0, 131.0, 22.0 ],
+					"text" : "port \"Lightpad BLOCK\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1088.0, 19.5, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"linecount" : 3,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1177.0, 147.5, 65.0, 49.0 ],
+					"presentation_linecount" : 3,
+					"text" : "port \"Elektron TM-1\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1088.0, 174.5, 59.0, 22.0 ],
+					"text" : "noteout 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "int" ],
+					"patching_rect" : [ 1088.0, 109.5, 143.0, 22.0 ],
+					"text" : "notein \"Lightpad BLOCK\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-70",
 					"maxclass" : "newobj",
@@ -248,7 +309,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 492.0, -546.0, 640.0, 480.0 ],
+						"rect" : [ 492.0, 100.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1213,7 +1274,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 662.5, 506.797027500000013, 135.0, 22.0 ],
-					"text" : "/terceiro 10. 0."
+					"text" : "/bang bang"
 				}
 
 			}
@@ -1290,13 +1351,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 759.0, 403.0, 50.0, 49.0 ],
-									"text" : "440. 200"
+									"text" : "228.661417 200"
 								}
 
 							}
@@ -1309,7 +1370,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 656.0, 495.0, 28.0, 35.0 ],
-									"text" : "440"
+									"text" : "228"
 								}
 
 							}
@@ -2347,7 +2408,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 528.0, -993.0, 1358.0, 997.0 ],
+						"rect" : [ 138.0, -990.0, 1683.0, 997.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2989,9 +3050,35 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"midpoints" : [ 1097.5, 44.5, 1075.0, 44.5, 1075.0, 101.5, 1186.5, 101.5 ],
+					"order" : 0,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-77", 0 ],
+					"midpoints" : [ 1097.5, 44.5, 1094.5, 44.5 ],
+					"order" : 1,
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"midpoints" : [ 546.0, 459.0, 546.0, 459.0 ],
 					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"midpoints" : [ 1186.5, 167.5, 1097.5, 167.5 ],
+					"source" : [ "obj-46", 0 ]
 				}
 
 			}
@@ -3233,6 +3320,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-63", 1 ],
+					"source" : [ "obj-76", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"midpoints" : [ 1097.5, 134.5, 1097.5, 134.5 ],
+					"source" : [ "obj-76", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"midpoints" : [ 1094.5, 89.5, 1097.5, 89.5 ],
+					"source" : [ "obj-77", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"midpoints" : [ 457.5, 114.0, 199.5, 114.0 ],
 					"source" : [ "obj-86", 0 ]
@@ -3285,7 +3395,7 @@
 			}
 , 			{
 				"name" : "osc_qasm.maxpat",
-				"bootpath" : "~/Documents/Max 8/MoogQu/MoogQu NOVO/Rever",
+				"bootpath" : "~/Documents/GitHub/ReVeR",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
