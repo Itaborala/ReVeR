@@ -1373,26 +1373,25 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-37",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 759.0, 403.0, 50.0, 49.0 ],
-									"text" : "131.338583 200"
+									"text" : "3.692913 200"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-26",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 656.0, 495.0, 28.0, 35.0 ],
-									"text" : "131"
+									"text" : "3"
 								}
 
 							}
